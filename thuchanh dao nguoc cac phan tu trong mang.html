@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    A = [1, 44, 324, 66, 33, 66, 88, 12];
+    let a = 0;
+    let b = A.length - 1;
+    while (a < b) {
+        let max = A[a];
+        A[a] = A[b];
+        A[b] = max;
+        a++;
+        b--;
+    }
+    document.write(A);
+</script>
+</body>
+</html>

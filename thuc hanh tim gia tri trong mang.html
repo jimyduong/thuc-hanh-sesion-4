@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nhap">
+<button onclick="tinh()">Tim</button>
+<p id="hienthi"></p>
+<script>
+    function tinh() {
+        let b = true;
+        let a = document.getElementById("nhap").value;
+        let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 10];
+        for (let i = 0; i <= A.length; i++) {
+            if (a == A[i]) {
+                b=false;
+                document.getElementById("hienthi").innerHTML += "so " + a + " nam o vi tri " + i + " trong mang" + "<br>";
+
+            }
+
+        }
+        if (b) {
+            document.getElementById("hienthi").innerHTML = "so " + a + " khong nam trong mang";
+        }
+    }
+</script>
+</body>
+</html>
